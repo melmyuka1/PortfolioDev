@@ -1,0 +1,73 @@
+/* RESPONSIVO */
+  @media screen and (max-width: 1024px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header-left {
+      padding: 2rem 1.5rem 1rem 1.5rem;
+      align-items: center;
+    }
+  
+    .curriculo-btn {
+      margin: 0 auto 1rem auto;
+      width: 180px;
+    }
+  
+    .title {
+      font-size: 2.2rem;
+    }
+  
+    .header-right {
+      margin-top: 1rem;
+    }
+  
+    .header-right img {
+      width: 250px;
+      margin-bottom: -4px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .bio {
+      font-size: 0.95rem;
+    }
+  
+    .header-right img {
+      width: 180px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .card.metodologias,
+    .skills-icons-card {
+      width: 90%;
+      clip-path: polygon(0 0, 98% 0%, 100% 100%, 2% 100%);
+    }
+  
+    .card.metodologias .icon img {
+      width: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card.metodologias {
+      font-size: 0.95rem;
+      padding: 20px;
+    }
+  
+    .card.metodologias h3 {
+      font-size: 1.2rem;
+    }
+  
+    .card.metodologias .icon img {
+      width: 35px;
+      
+    }
+  }

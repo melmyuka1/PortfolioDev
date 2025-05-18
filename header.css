@@ -1,0 +1,128 @@
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* ← importante */
+    background-color: #202224;
+    padding: 0;
+    margin: 0;
+    height: 100%; /* deixa que o conteúdo dite a altura */
+    min-height: 480px;
+  }
+  .tittle p {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: none; /* sem linha */
+  animation: typing 3s steps(27, end);
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: monospace;
+  max-width: fit-content;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+  /* ESQUERDA — Texto e botão */
+  .header-left {
+    flex: 1;
+    padding: 3rem 2rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .curriculo-btn {
+    background-color: #AE63FF;
+    color: white;
+    padding: 0.4rem 1.6rem;  /* ← botão mais fininho */
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .aaa{
+    color: aliceblue;
+  }
+  
+  /* Título */
+  .title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .title span {
+    color: #c780f2;
+  }
+  
+  .bio {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  
+  /* DIREITA — Imagem colada no fundo */
+  .header-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* antes: flex-end */
+    padding-bottom: 0;
+    position: relative;
+  }
+  
+  .header-right img {
+    max-width: 100%;
+    height: auto;
+    max-height: 490px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: -20px; /* cola no fundo */
+    margin-top: -15px;   /* NOVO: sobe a imagem */
+  }
+  
+  /* EVITAR espaço entre header e próximo bloco */
+  main, section, .skills {
+    margin-top: 0;
+    padding-top: 0;
+
+        padding: 0 20px;
+      
+  }
+.projetos-btn
+{
+    background-color: #AE63FF;
+    color: white;
+    padding: 0.4rem 1.6rem;  /* ← botão mais fininho */
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    width: 250px;
+    margin-bottom: 1.5rem;
+}  
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: none; /* sem linha piscando */
+  animation: typing 2s steps(30, end) forwards;
+}
+
+/* Animação */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+

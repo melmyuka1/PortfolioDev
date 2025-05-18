@@ -1,0 +1,89 @@
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #000000;
+}
+
+.card-projeto {
+  background-color: #4A44A4;
+  color: white;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-family: Arial, sans-serif;
+}
+
+.card-topo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-img-projeto {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-logos {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+.card-link:hover {
+  background-color: #581ff4;
+}
+
+.card-titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.card-descricao {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+.card-projeto {
+  background-color: #4A44A4;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.card-projeto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
